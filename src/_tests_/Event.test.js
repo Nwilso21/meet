@@ -10,11 +10,11 @@ describe('<EventList /> component', () => {
     EventListComponent = render(<EventList />);
   });
 
-  test('has an element with "list" role', () => {
+  test('tests for a list element to be present', () => {
     expect(EventListComponent.queryByRole("list")).toBeInTheDocument();
   });
 
-  test('renders correct number of events', async () => {
+  test('the right amount of events', async () => {
     const allEvents = await getEvents();
     EventListComponent.rerender(<EventList events={allEvents} />);
     expect(EventListComponent.getAllByRole("listitem")).toHaveLength(allEvents.length);
