@@ -44,3 +44,7 @@
   width: 250px;
   z-index: 1000;
 }
+
+.charts-containter{
+  grid-template-columns: 1fr 1fr
+}
