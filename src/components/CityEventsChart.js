@@ -10,6 +10,7 @@ import {
 
 const CityEventsChart = ({ allLocations, events }) => {
   const [data, setData] = useState([]);
+  console.log(data);
 
   useEffect(() => {
     setData(getData());
