@@ -5,6 +5,7 @@ import {useState, useEffect} from 'react';
 const EventGenresChart = ({events}) => {
     const [data, setData] = useState([]);
     const genres = ['React', 'JavaScript', 'Node', 'jQuery', 'Angular'];
+    console.log(data);
 
     const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, index }) => {
         const RADIAN = Math.PI / 180;
